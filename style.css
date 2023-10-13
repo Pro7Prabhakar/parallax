@@ -3,8 +3,7 @@
     margin: 0px;
     padding: 0px;
 }
-/* Styling the first parallax's 
-height, width and background color */
+/* Styling the first parallax's height, width and background color */
 .parallax-1 {
     width: 100%;
     height: 600px;
@@ -25,11 +24,10 @@ height, width and background color */
     color: white;
     text-align: center;
 }
-/* Styling the second parallax's 
-height, width and background color */
+/* Styling the second parallax's height, width and background color */
 .parallax-2 {
     width: 100%;
-    height: 100%;
+    height: 600px;
     background: url('./img2.jpg');
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -55,6 +53,7 @@ height, width and background color */
     background-color: black;
     color: white;
     font-size: 19px;
+    font-
 }
 /* Styling the content or paragraph */
 .para-2 {
@@ -65,9 +64,40 @@ height, width and background color */
     background-color: black;
     color: white;
 }
-a{
+/* Styling applied to anchor */
+a {
     text-decoration: none;
-    color: white;
+    color: rgb(250,250,150) !important;
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #54b3d6 50%,
+      #fafa96 50%
+);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}  
+a:before{
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}  
+a:hover {
+    background-position: 0;}  
+a:hover::before{
+    width: 100%;
 }
 /* Footer paragraph positioning */
 footer p{
